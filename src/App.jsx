@@ -5,9 +5,13 @@ import PostContainer from "./components/PostContainer";
 import { Provider } from "react-redux";
 import appStore from "./utils/store/appStore";
 import ErrorPage from "./components/ErrorPage";
-import PostView from "./components/PostView";
+import { lazy, Suspense } from "react";
+import LoadingPage from "./components/LoadingPage";
 
 function App() {
+  const PostView = lazy(() => import("./components/PostView"));
+  const UserFeed = lazy(() => import("./components/UserFeed"));
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -17,11 +21,19 @@ function App() {
         { path: "/", element: <PostContainer /> },
         {
           path: "/feed",
-          element: <UserFeed />,
+          element: (
+            <Suspense fallback={<LoadingPage />}>
+              <UserFeed />
+            </Suspense>
+          ),
         },
         {
           path: "/postView/:imgId",
-          element: <PostView />,
+          element: (
+            <Suspense fallback={<LoadingPage />}>
+              <PostView />
+            </Suspense>
+          ),
         },
       ],
     },
