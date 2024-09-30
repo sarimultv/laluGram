@@ -25,6 +25,7 @@ function App() {
               <UserFeed />
             </Suspense>
           ),
+          errorElement: <ErrorPage />,
         },
         {
           path: "/postView/:imgId",
@@ -33,6 +34,7 @@ function App() {
               <PostView />
             </Suspense>
           ),
+          errorElement: <ErrorPage />,
         },
       ],
     },

@@ -3,7 +3,7 @@ export const loggedInUser = {
   userName: "Sophia",
   fullName: "Emma Sophia",
   userPost:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, cumque tempore possimus nesciunt quo perferendis ratione, eius culpa soluta consequatur nam esse. Fugiat iste ducimus veniam eaque! Earum, ipsum rem!",
+    "The historian Frank Ankersmit describes nostalgia as the experience of an unbridgeable difference between past and present",
   numberOfComment: 29,
   numberOfLike: 29,
   postsAlt: "this is the post by",

@@ -54,6 +54,7 @@ const PostCard = (props) => {
         userAltImg={userAltImg}
         POST_IMG={POST_IMG}
         PROF_IMG={PROF_IMG}
+        userPost={userPost}
       />
 
       <PostReaction

@@ -2,13 +2,20 @@ import { useDispatch } from "react-redux";
 import { readScreenText } from "../utils/store/readTextSlice";
 
 const ImageBox = (props) => {
-  const { userName, postsAlt, userAltImg, POST_IMG, PROF_IMG, profileDesc } =
-    props;
+  const {
+    userName,
+    postsAlt,
+    userPost,
+    userAltImg,
+    POST_IMG,
+    PROF_IMG,
+    profileDesc,
+  } = props;
 
   const dispatch = useDispatch();
 
   const handleReadPostsAlt = () => {
-    dispatch(readScreenText(`${postsAlt}${userName}`));
+    dispatch(readScreenText(`${postsAlt}${userName} about ${userPost}`));
   };
 
   const handleReadUserName = () => {

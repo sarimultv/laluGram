@@ -21,7 +21,7 @@ const PostView = () => {
   const { userPost, postsAlt, userName, POST_IMG } = loggedInUser;
 
   const handleReadPostsAlt = () => {
-    dispatch(readScreenText(`${postsAlt}${userName}`));
+    dispatch(readScreenText(`${postsAlt}${userName} about ${userPost}`));
   };
   const handleMoreBtn = () => {
     setIsClicked(!isClicked);
