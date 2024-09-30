@@ -19,7 +19,7 @@ const ToggleText = () => {
   return (
     <>
       <span
-        className="text-5xl cursor-pointer bg-gray-950 rounded text-white px-3 pb-2 xs:max-sm:mr-2"
+        className="text-5xl cursor-pointer bg-gray-950 rounded text-white px-3 pb-2 xs:max-sm:mr-2 hover:text-black hover:bg-yellow-400"
         onClick={handleDecreaseTextSize}
       >
         -
@@ -29,7 +29,7 @@ const ToggleText = () => {
         className="md:max-md:visible sm:max-md:hidden xs:max-sm:hidden"
       />
       <span
-        className="text-5xl cursor-pointer bg-gray-950 rounded text-white px-2 pb-2"
+        className="text-5xl cursor-pointer bg-gray-950 rounded text-white px-2 pb-2 hover:text-black hover:bg-yellow-400"
         onClick={handleIncreaseTextSize}
       >
         +

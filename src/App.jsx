@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Body from "./components/Body";
-import UserFeed from "./components/UserFeed";
 import PostContainer from "./components/PostContainer";
 import { Provider } from "react-redux";
 import appStore from "./utils/store/appStore";

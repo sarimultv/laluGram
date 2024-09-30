@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const UserFeed = () => {
   return (
-    <div className="col-span-11 lg:ml-3 md:ml-3 mb-6">
+    <div className="lg:col-span-11 md:col-span-11 lg:ml-3 md:ml-3 mb-6">
       <UserProfile items={loggedInUser} />
 
       <div className="md:w-[62rem]">

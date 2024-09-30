@@ -1,0 +1,27 @@
+const CommentViewModal = (props) => {
+  const { viewComment, setViewComment, comment } = props;
+  const handleCloseBtn = () => {
+    setViewComment(!viewComment);
+  };
+
+  return (
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center">
+      <div className="bg-white text-black rounded-lg lg:p-6 md:p-6 md:w-1/3 lg:w-1/3 xs:max-md:p-2 border">
+        {comment ? (
+          <p>{comment}</p>
+        ) : (
+          <p>No comments on this post, add a comment ...</p>
+        )}
+
+        <button
+          className="px-4 py-2 bg-red-500 text-white rounded mt-8"
+          onClick={handleCloseBtn}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default CommentViewModal;

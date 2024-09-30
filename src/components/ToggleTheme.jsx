@@ -10,7 +10,7 @@ const ToggleTheme = () => {
   };
 
   return (
-    <span className="flex gap-2 items-center rounded md:max-lg:p-2 sm:max-md:p-2 xs:max-sm:p-2">
+    <span className="flex gap-2 items-center rounded md:p-2 sm:max-md:p-2 xs:max-sm:p-2 hover:text-black hover:bg-yellow-400">
       <MdLightMode
         size={40}
         className="cursor-pointer"
