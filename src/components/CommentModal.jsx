@@ -30,13 +30,13 @@ const CommentModal = (props) => {
         />
 
         <button
-          className="px-4 py-2 bg-yellow-400 text-black rounded mr-2"
+          className="px-4 py-2 bg-yellow-400 text-black rounded mr-2 hover:bg-black hover:text-white"
           onClick={handleSubmitBtn}
         >
           Submit
         </button>
         <button
-          className="px-4 py-2 bg-yellow-400 text-black rounded"
+          className="px-4 py-2 bg-yellow-400 text-black rounded hover:bg-black hover:text-white"
           onClick={handleCloseBtn}
         >
           Close

@@ -2,12 +2,15 @@ import { GoHeart } from "react-icons/go";
 import { MdModeComment, MdOutlineModeComment } from "react-icons/md";
 import { FaHeart, FaRegShareSquare, FaShareSquare } from "react-icons/fa";
 import { useState } from "react";
+import ShareModal from "./ShareModal";
 
 const PostReaction = (props) => {
   const [isShare, setIsShare] = useState(false);
+  const [share, setShare] = useState(false);
 
   const handleShareBtn = () => {
     setIsShare(!isShare);
+    setShare(!share);
   };
 
   const { numberOfLike, setNumberOfLike, numberOfComment } = props;
@@ -37,6 +40,7 @@ const PostReaction = (props) => {
           {isShare ? <FaShareSquare /> : <FaRegShareSquare />} share
         </div>
       </div>
+      {share ? <ShareModal share={share} setShare={setShare} /> : <></>}
     </div>
   );
 };

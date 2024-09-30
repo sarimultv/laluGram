@@ -89,7 +89,7 @@ const PostView = () => {
           </span>
         )}
         <span
-          className="text-gray-500 p-1 cursor-pointer ml-1"
+          className="text-black bg-yellow-400 rounded p-1 cursor-pointer ml-1"
           onClick={handleReadBtn}
         >
           Read Post

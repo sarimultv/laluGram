@@ -17,7 +17,7 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-2 sm:max-md:visible md:hidden border-b">
+    <div className="grid grid-flow-col p-2 xs:max-lg:visible lg:hidden border-b">
       <div className="col-span-6 flex items-center ml-6">
         <Link to={"/"}>
           <h1 className="font-bold text-3xl cursor-pointer">laluGram</h1>

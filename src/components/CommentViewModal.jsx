@@ -14,7 +14,7 @@ const CommentViewModal = (props) => {
         )}
 
         <button
-          className="px-4 py-2 bg-yellow-400 text-black rounded mt-8"
+          className="px-4 py-2 bg-yellow-400 text-black rounded mt-8 hover:bg-black hover:text-white"
           onClick={handleCloseBtn}
         >
           Close
