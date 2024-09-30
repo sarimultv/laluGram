@@ -25,7 +25,7 @@ const UserProfile = ({ items }) => {
     <div className="xs:max-md:col-span-1 md:w-5/6 my-6 flex items-center ">
       <div className="xs:max-md:col-span-1 xs:max-md:ml-5 md:w-4/12 md:ml-14">
         <img
-          className="xs:max-md:w-[9rem] xs:max-md:h-[7rem] md:w-36 md:h-36 object-cover rounded-full cursor-pointer"
+          className=" xs:max-md:w-[9rem] xs:max-md:h-[9rem] md:w-36 md:h-36 object-cover rounded-full cursor-pointer"
           src={PROF_IMG}
           onClick={handleReadProfAlt}
         />
