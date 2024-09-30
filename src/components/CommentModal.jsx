@@ -20,7 +20,7 @@ const CommentModal = (props) => {
 
   return (
     <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center xs:max-md:p-2">
-      <div className="bg-white text-black rounded-lg lg:p-6 md:p-6 md:w-1/2 lg:w-1/2 xs:max-md:p-2">
+      <div className="bg-white text-black rounded-lg lg:p-6 md:p-6 md:w-1/2 lg:w-1/2 xs:max-md:p-2 xs:max-sm:w-max">
         <textarea
           ref={commentInput}
           rows={5}

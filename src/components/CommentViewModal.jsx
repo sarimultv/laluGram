@@ -5,8 +5,8 @@ const CommentViewModal = (props) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center">
-      <div className="bg-white text-black rounded-lg lg:p-6 md:p-6 md:w-1/3 lg:w-1/3 xs:max-md:p-2 border">
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center xs:max-md:p-2">
+      <div className="bg-white text-black rounded-lg lg:p-6 md:p-6 md:w-1/2 lg:w-1/2 xs:max-md:p-2 xs:max-sm:w-max">
         {comment ? (
           <p>{comment}</p>
         ) : (

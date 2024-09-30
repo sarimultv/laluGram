@@ -2,7 +2,6 @@ import { GoHeart } from "react-icons/go";
 import { MdModeComment, MdOutlineModeComment } from "react-icons/md";
 import { FaHeart, FaRegShareSquare, FaShareSquare } from "react-icons/fa";
 import { useState } from "react";
-import { BsSave2, BsSave2Fill } from "react-icons/bs";
 
 const PostReaction = (props) => {
   const [isShare, setIsShare] = useState(false);
@@ -11,19 +10,13 @@ const PostReaction = (props) => {
     setIsShare(!isShare);
   };
 
-  const [isSaved, setIsSaved] = useState(false);
-
-  const handleSaveBtn = () => {
-    setIsSaved(!isSaved);
-  };
-
   const { numberOfLike, setNumberOfLike, numberOfComment } = props;
 
   const handleLikeBtn = () => {
     setNumberOfLike(numberOfLike + 1);
   };
   return (
-    <div className="flex justify-between items-center my-2">
+    <div className="flex justify-between items-center my-2 xs:max-sm:w-4/5">
       <div className="flex justify-start items-center gap-1">
         <div
           className="cursor-pointer flex items-center gap-0 mr-2 hover:font-semibold text-3xl"
@@ -43,13 +36,6 @@ const PostReaction = (props) => {
         >
           {isShare ? <FaShareSquare /> : <FaRegShareSquare />} share
         </div>
-      </div>
-      <div
-        className="cursor-pointer flex items-center gap-0 hover:font-semibold text-3xl"
-        onClick={handleSaveBtn}
-      >
-        {isSaved ? <BsSave2Fill /> : <BsSave2 />}
-        <p>save</p>
       </div>
     </div>
   );
